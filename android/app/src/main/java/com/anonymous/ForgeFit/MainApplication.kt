@@ -1,4 +1,4 @@
-package com.forgefit
+package com.anonymous.ForgeFit
 
 import android.app.Application
 import android.content.res.Configuration

@@ -1,4 +1,4 @@
-package com.forgefit
+package com.anonymous.ForgeFit
 
 import android.os.Build
 import android.os.Bundle
