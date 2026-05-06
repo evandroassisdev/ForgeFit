@@ -1,9 +1,8 @@
-import { Text, View } from "react-native";
+import { LoginScreen } from "@/screens/Login";
+import { useLogin } from "@/screens/Login/hooks/useLogin";
 
 export default function Login() {
-  return (
-    <View>
-      <Text>Login</Text>
-    </View>
-  );
+  const props = useLogin();
+  
+  return <LoginScreen {...props} />;
 }

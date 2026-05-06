@@ -1,9 +1,8 @@
-import { Text, View } from "react-native";
+import { RegisterScreen } from "@/screens/Register";
+import { useRegister } from "@/screens/Register/hooks/useRegister";
 
 export default function Register() {
-  return (
-    <View>
-      <Text>Register</Text>
-    </View>
-  );
+  const props = useRegister();
+
+  return <RegisterScreen {...props} />;
 }

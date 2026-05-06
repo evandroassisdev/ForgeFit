@@ -1,9 +1,8 @@
-import { Text, View } from "react-native";
+import { HomeScreen } from "@/screens/Home";
+import { useHome } from "@/screens/Home/hooks/useHome";
 
 export default function Home() {
-  return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  );
+  const props = useHome();
+
+  return <HomeScreen {...props} />;
 }
