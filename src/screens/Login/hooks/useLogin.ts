@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-export const useLogin = () => {
+export type UseLoginProps = {
+  loading: boolean;
+  setLoading: (loading: boolean) => void;
+};
+
+export const useLogin = (): UseLoginProps => {
   const [loading, setLoading] = useState(false);
   
   return {

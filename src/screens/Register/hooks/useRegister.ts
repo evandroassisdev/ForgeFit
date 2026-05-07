@@ -1,12 +1,19 @@
 import { useState } from "react";
 
-export const useRegister = () => {
+export type UseRegisterProps = {
+  userData: {
+    name: string;
+  };
+  setUserData: (userData: { name: string }) => void;
+};
+
+export const useRegister = (): UseRegisterProps => {
   const [userData, setUserData] = useState({
     name: 'Evandro',
   });
   
   return {
     userData,
-    setUserData,
+    setUserData
   };
 };
