@@ -1,4 +1,4 @@
-import { UserInterface } from "./user";
+import { UserInterface } from "@/shared/modules/user/user.types";
 
 export interface RegisterHttpParams {
   name: string;
